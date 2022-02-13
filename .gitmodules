@@ -1,0 +1,3 @@
+[submodule "demos/code_lumexum/webcomponents"]
+	path = demos/code_lumexum/webcomponents
+	url = https://github.com/Tangle-System/webcomponents
