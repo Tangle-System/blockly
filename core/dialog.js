@@ -25,11 +25,15 @@ let alertImplementation = function(message, opt_callback) {
 };
 
 let confirmImplementation = function(message, callback) {
-  callback(window.confirm(message));
+  window.confirm(message).then((v) => {
+    callback(v);
+  });
 };
 
 let promptImplementation = function(message, defaultValue, callback) {
-  callback(window.prompt(message, defaultValue));
+  window.prompt(message, defaultValue).then((v) => {
+    callback(v);
+  });
 };
 
 /**
